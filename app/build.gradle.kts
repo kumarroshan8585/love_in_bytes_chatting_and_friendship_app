@@ -64,5 +64,7 @@ dependencies {
     implementation ("com.github.bumptech.glide:glide:4.16.0")
     implementation ("de.hdodenhof:circleimageview:3.1.0")
     implementation ("com.github.yuyakaido:CardStackView:v2.3.4")
+    implementation("com.google.ai.client.generativeai:generativeai:0.2.0")
+    implementation ("com.github.ZEGOCLOUD:zego_uikit_prebuilt_call_android:+")
 
 }

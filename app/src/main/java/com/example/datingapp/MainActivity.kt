@@ -1,5 +1,6 @@
 package com.example.datingapp
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Gravity
@@ -9,6 +10,7 @@ import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.core.view.GravityCompat
 import androidx.navigation.findNavController
 import androidx.navigation.ui.NavigationUI
+import com.example.datingapp.activity.GeminiActivity
 import com.example.datingapp.databinding.ActivityMainBinding
 import com.google.android.material.navigation.NavigationView
 import com.google.android.material.navigation.NavigationView.OnNavigationItemSelectedListener
@@ -48,6 +50,10 @@ class MainActivity : AppCompatActivity(), OnNavigationItemSelectedListener {
 
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
         when(item.itemId){
+            R.id.gemini->{
+                val intent = Intent(this, GeminiActivity::class.java)
+                startActivity(intent)
+            }
             R.id.rateUs->{
                 Toast.makeText(this, "Rate Us!", Toast.LENGTH_SHORT).show()
             }

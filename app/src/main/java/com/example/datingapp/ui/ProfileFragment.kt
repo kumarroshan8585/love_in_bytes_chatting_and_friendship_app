@@ -48,6 +48,12 @@ class ProfileFragment : Fragment() {
                     //require context is used instead of "this" because it helps to get typesafety from null
 
                     Config.hideDialog()
+
+//                    val intent = Intent(requireContext(), VideoCall::class.java)
+//                    intent.putExtra("NUMBER", binding.number.text.toString())
+//                    intent.putExtra("NAME", binding.name.text.toString())
+//                    startActivity(intent)
+
                 }
             }
 
@@ -59,10 +65,17 @@ class ProfileFragment : Fragment() {
         }
 
         binding.editProfile.setOnClickListener {
+
             startActivity(Intent(requireContext(), EditProfileActivity::class.java))
         }
+
+
         return binding.root
     }
 
 
 }
+
+
+
+
